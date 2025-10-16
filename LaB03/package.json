@@ -1,0 +1,20 @@
+{
+  "name": "lab03-node-calculator",
+  "version": "1.0.0",
+  "description": "LAB03 - Node.js Simple Calculator using Connect (by Shreya Basnet)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": ["node", "connect", "calculator", "georgian-college", "lab03"],
+  "author": "Shreya Basnet",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "connect": "^3.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
