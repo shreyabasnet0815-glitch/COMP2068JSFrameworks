@@ -27,7 +27,7 @@ function calculator(req, res) {
   if (!method || isNaN(x) || isNaN(y)) {
     res.statusCode = 400;
     res.end(
-      '❌ Error: Missing or invalid parameters.\n' +
+      ' Error: Missing or invalid parameters.\n' +
       'Example: /lab3?method=add&x=16&y=4\n'
     );
     return;
@@ -53,7 +53,7 @@ function calculator(req, res) {
     case 'divide':
       if (y === 0) {
         res.statusCode = 400;
-        res.end('❌ Error: Division by zero is not allowed.\n');
+        res.end('Error: Division by zero is not allowed.\n');
         return;
       }
       result = x / y;
@@ -61,7 +61,7 @@ function calculator(req, res) {
       break;
     default:
       res.statusCode = 400;
-      res.end('❌ Error: Invalid method. Use add, subtract, multiply, or divide.\n');
+      res.end(' Error: Invalid method. Use add, subtract, multiply, or divide.\n');
       return;
   }
 
