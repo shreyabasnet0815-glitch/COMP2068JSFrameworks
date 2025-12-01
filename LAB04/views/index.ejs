@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+  </head>
+  <body>
+    <%- include('partials/header') %>
+
+    <main class="main-container">
+      <section class="hero">
+        <h1>Shreya’s Favourite TV Shows</h1>
+        <p>
+          Welcome to my mini fan site where I share the shows I absolutely love.
+          Click any show below to explore.
+        </p>
+      </section>
+
+      <section class="cards-grid">
+        <a href="/money-heist" class="show-card moneyheist-card">
+          <h2>Money Heist</h2>
+          <p>Spanish heist drama full of twists, emotion, and “Bella Ciao” vibes.</p>
+        </a>
+
+        <a href="/alice-in-borderland" class="show-card alice-card">
+          <h2>Alice in Borderland</h2>
+          <p>Deadly games, survival, and mind-bending challenges in Tokyo.</p>
+        </a>
+
+        <a href="/the-boys" class="show-card boys-card">
+          <h2>The Boys</h2>
+          <p>Superheroes… but dark, corrupt, and absolutely wild.</p>
+        </a>
+
+        <a href="/stranger-things" class="show-card stranger-card">
+          <h2>Stranger Things</h2>
+          <p>’80s nostalgia, kids vs monsters, and the Upside Down.</p>
+        </a>
+      </section>
+    </main>
+  </body>
+</html>
